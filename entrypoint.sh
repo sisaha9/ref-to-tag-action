@@ -1,8 +1,8 @@
 #!/bin/bash -l
 
-# Clean the branch name by replacing / with a .
+# Clean the branch name by replacing / with a _
 function clean {
-    local cleaned=`echo $1 | sed 's,/,.,g'`
+    local cleaned=`echo $1 | sed 's,/,_,g'`
     echo "$cleaned"
 }
 
